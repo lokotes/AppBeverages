@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 struct Beverage {
     let name : String
@@ -36,6 +37,7 @@ class BeverageMenuViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        SVProgressHUD.show()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

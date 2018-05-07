@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nrx-oI-EW0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeverageCell" rowHeight="84" id="T8E-R8-iOX" customClass="BeverageCell" customModule="AppBeverages" customModuleProvider="target">
@@ -63,7 +63,7 @@
                         <color key="backgroundColor" red="0.3374294704861111" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nrx-oI-EW0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="532-q5-6dQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nrx-oI-EW0" secondAttribute="bottom" id="ASQ-YM-p71"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nrx-oI-EW0" secondAttribute="bottom" constant="200" id="ASQ-YM-p71"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nrx-oI-EW0" secondAttribute="trailing" id="THb-3H-Fwt"/>
                             <constraint firstItem="Nrx-oI-EW0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x0W-Fn-F88"/>
                         </constraints>

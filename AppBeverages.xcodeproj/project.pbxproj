@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5C3C37C8E2D12875B6B466D /* Pods_AppBeverages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F0FE6065C3AD0A084B0693 /* Pods_AppBeverages.framework */; };
 		DA32984020A0A42E00220CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32983F20A0A42E00220CEA /* AppDelegate.swift */; };
 		DA32984220A0A42E00220CEA /* BeverageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32984120A0A42E00220CEA /* BeverageMenuViewController.swift */; };
 		DA32984520A0A42E00220CEA /* Beverages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA32984320A0A42E00220CEA /* Beverages.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01F0FE6065C3AD0A084B0693 /* Pods_AppBeverages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBeverages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2219B47CCE60CAB730623359 /* Pods-AppBeverages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBeverages.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppBeverages/Pods-AppBeverages.release.xcconfig"; sourceTree = "<group>"; };
 		DA32983C20A0A42E00220CEA /* AppBeverages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBeverages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA32983F20A0A42E00220CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA32984120A0A42E00220CEA /* BeverageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageMenuViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		DA32984920A0A43800220CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA32984B20A0A43800220CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA32985320A0B81900220CEA /* BeverageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageCell.swift; sourceTree = "<group>"; };
+		EC95B0315D3A1FF267EE9FA8 /* Pods-AppBeverages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBeverages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppBeverages/Pods-AppBeverages.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C3C37C8E2D12875B6B466D /* Pods_AppBeverages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D605CC9176D8C1379D5FA783 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01F0FE6065C3AD0A084B0693 /* Pods_AppBeverages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7F63638188BB669C90E7255 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC95B0315D3A1FF267EE9FA8 /* Pods-AppBeverages.debug.xcconfig */,
+				2219B47CCE60CAB730623359 /* Pods-AppBeverages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA32983320A0A42E00220CEA = {
 			isa = PBXGroup;
 			children = (
 				DA32983E20A0A42E00220CEA /* AppBeverages */,
 				DA32983D20A0A42E00220CEA /* Products */,
+				D7F63638188BB669C90E7255 /* Pods */,
+				D605CC9176D8C1379D5FA783 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA32984E20A0A43800220CEA /* Build configuration list for PBXNativeTarget "AppBeverages" */;
 			buildPhases = (
+				FC66B2D6343CABF027CB3682 /* [CP] Check Pods Manifest.lock */,
 				DA32983820A0A42E00220CEA /* Sources */,
 				DA32983920A0A42E00220CEA /* Frameworks */,
 				DA32983A20A0A42E00220CEA /* Resources */,
+				E23FD50E9492ADA79AD3DCEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E23FD50E9492ADA79AD3DCEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppBeverages/Pods-AppBeverages-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppBeverages/Pods-AppBeverages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC66B2D6343CABF027CB3682 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppBeverages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA32983820A0A42E00220CEA /* Sources */ = {
@@ -282,15 +347,13 @@
 		};
 		DA32984F20A0A43800220CEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC95B0315D3A1FF267EE9FA8 /* Pods-AppBeverages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = AppBeverages/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = everis.AppBeverages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -300,15 +363,13 @@
 		};
 		DA32985020A0A43800220CEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2219B47CCE60CAB730623359 /* Pods-AppBeverages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = AppBeverages/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = everis.AppBeverages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
