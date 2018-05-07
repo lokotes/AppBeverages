@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DA32984020A0A42E00220CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32983F20A0A42E00220CEA /* AppDelegate.swift */; };
-		DA32984220A0A42E00220CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32984120A0A42E00220CEA /* ViewController.swift */; };
+		DA32984220A0A42E00220CEA /* BeverageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32984120A0A42E00220CEA /* BeverageMenuViewController.swift */; };
 		DA32984520A0A42E00220CEA /* Beverages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA32984320A0A42E00220CEA /* Beverages.storyboard */; };
 		DA32984720A0A43800220CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA32984620A0A43800220CEA /* Assets.xcassets */; };
 		DA32984A20A0A43800220CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA32984820A0A43800220CEA /* LaunchScreen.storyboard */; };
+		DA32985420A0B81900220CEA /* BeverageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32985320A0B81900220CEA /* BeverageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA32983C20A0A42E00220CEA /* AppBeverages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBeverages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA32983F20A0A42E00220CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA32984120A0A42E00220CEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA32984120A0A42E00220CEA /* BeverageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageMenuViewController.swift; sourceTree = "<group>"; };
 		DA32984420A0A42E00220CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Beverages.storyboard; sourceTree = "<group>"; };
 		DA32984620A0A43800220CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA32984920A0A43800220CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA32984B20A0A43800220CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA32985320A0B81900220CEA /* BeverageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				DA32983F20A0A42E00220CEA /* AppDelegate.swift */,
-				DA32984120A0A42E00220CEA /* ViewController.swift */,
+				DA32984120A0A42E00220CEA /* BeverageMenuViewController.swift */,
 				DA32984320A0A42E00220CEA /* Beverages.storyboard */,
 				DA32984620A0A43800220CEA /* Assets.xcassets */,
 				DA32984820A0A43800220CEA /* LaunchScreen.storyboard */,
 				DA32984B20A0A43800220CEA /* Info.plist */,
+				DA32985320A0B81900220CEA /* BeverageCell.swift */,
 			);
 			path = AppBeverages;
 			sourceTree = "<group>";
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA32984220A0A42E00220CEA /* ViewController.swift in Sources */,
+				DA32985420A0B81900220CEA /* BeverageCell.swift in Sources */,
+				DA32984220A0A42E00220CEA /* BeverageMenuViewController.swift in Sources */,
 				DA32984020A0A42E00220CEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = AppBeverages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = AppBeverages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

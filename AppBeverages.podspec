@@ -11,5 +11,5 @@ s.homepage = "https://github.com/lokotes/AppBeverages"
 s.source = { :git => "https://github.com/lokotes/AppBeverages.git", :tag => "#{s.version}"}
 s.framework = "UIKit"
 s.source_files = "AppBeverages/**/*.{swift}"
-s.resources = "AppBeverages/**/*.{png,jpeg,jpg,storyboard,xib}"
+s.resources = "AppBeverages/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 end
