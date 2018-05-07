@@ -4,7 +4,7 @@ s.ios.deployment_target = '11.3'
 s.name = "AppBeverages"
 s.summary = "AppBeverages es un módulo de App Restaurante"
 s.requires_arc = true
-s.version = "0.0.5"
+s.version = "0.0.7"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Diego Ferrari" => "diegoferraricamus@gmail.com" }
 s.homepage = "https://github.com/lokotes/AppBeverages"
